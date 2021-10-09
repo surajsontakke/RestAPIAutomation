@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Step1 Suite">
+	<listeners>
+		<listener
+			class-name="com.java.qa.sccm.Utility.ExtendReportListener" />
+	</listeners>
+	<test name="Service Deploy Step">
+		<classes>
+			<class name="com.java.qa.sccm.test.LoginTest" />
+			<class name="com.java.qa.sccm.test.Step2Test" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
