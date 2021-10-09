@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Step1 Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.java.qa.sccm.Utility.ExtendReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Service Deploy Step(failed)">
+    <classes>
+      <class name="com.java.qa.sccm.test.Step2Test">
+        <methods>
+          <include name="ValidationStep2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.java.qa.sccm.test.Step2Test -->
+    </classes>
+  </test> <!-- Service Deploy Step(failed) -->
+</suite> <!-- Failed suite [Step1 Suite] -->

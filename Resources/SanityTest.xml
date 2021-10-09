@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Sanity Test">
+	<listeners>
+		<listener class-name="com.java.qa.sccm.Utility.ExtendReport" />
+	</listeners>
+	<test thread-count="5" name="SCCM API Sanity test">
+		<classes>
+			<class name="com.java.qa.sccm.test.LoginTest" />
+			<class name="com.java.qa.sccm.test.CreateCustomerTest" />
+			<class name="com.java.qa.sccm.test.GetCustomerDataTest" />
+			<class name="com.java.qa.sccm.test.UpdateCustomerTest" />
+			<class name="com.java.qa.sccm.test.DeleteCustomerTest" />
+			<class name="com.java.qa.sccm.test.Step1Test" />
+			<class name="com.java.qa.sccm.test.Step2Test" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>TestNG:  DeleteCustomerData</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DeleteCustomerData</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Oct 09 17:00:36 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>6 seconds (6590 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.java.qa.sccm.test.DeleteCustomerTest.ValidateDeleteCustomer()'><b>ValidateDeleteCustomer</b><br>Test class: com.java.qa.sccm.test.DeleteCustomerTest<br>Parameters: {TestName=validData, Customer_id=967572}<br/>
+<a href="#Output-510793091" onClick='toggleBox("Output-510793091", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-510793091" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-510793091">
+Request URI : http://173.37.21.174/SCCM/sccm_api/web/api/v1/customers?customer_id=967572<br/>
+Status code : 200<br/>
+Response message : Response Messege : {
+    "status_code": 200,
+    "sub_status_code": 2000,
+    "message": "Customer Deleted Successfully",
+    "data": {
+        "customer_id": "967572"
+    },
+    "app_data": [
+        
+    ]
+}<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.java.qa.sccm.test.DeleteCustomerTest@58359ebd</td></tr>
+<tr>
+<td title='com.java.qa.sccm.test.DeleteCustomerTest.ValidateDeleteCustomer()'><b>ValidateDeleteCustomer</b><br>Test class: com.java.qa.sccm.test.DeleteCustomerTest<br>Parameters: {TestName=BlankCustID, Customer_id=}<br/>
+<a href="#Output-977645524" onClick='toggleBox("Output-977645524", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-977645524" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-977645524">
+Request URI : http://173.37.21.174/SCCM/sccm_api/web/api/v1/customers?customer_id=<br/>
+Status code : 200<br/>
+Response message : Response Messege : {
+    "status_code": 5000,
+    "sub_status_code": 5003,
+    "error": "Customer Resource Not Found",
+    "data": [
+        
+    ],
+    "app_data": [
+        
+    ]
+}<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.java.qa.sccm.test.DeleteCustomerTest@58359ebd</td></tr>
+<tr>
+<td title='com.java.qa.sccm.test.LoginTest.loginTestValidation()'><b>loginTestValidation</b><br>Test class: com.java.qa.sccm.test.LoginTest<br>Test method: Verify sign in functionality<br>Parameters: {TestName=LoginTest, ExpectedOutput=Data retrieval successfully, Password=Test@321, UserName=admin}<br/>
+<a href="#Output-232782444" onClick='toggleBox("Output-232782444", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-232782444" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-232782444">
+Request URI : http://173.37.21.174/SCCM/sccm_api/web/api/v1/login<br/>
+Status code : 200<br/>
+Response message : Response Messege : {
+    "status": true,
+    "message": "Data retrieval successfully",
+    "token_type": "Bearer",
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xNzMuMzcuMjEuMTc0IiwiYXVkIjoiaHR0cDpcL1wvMTczLjM3LjIxLjE3NCIsImlhdCI6MTYzMzc3OTAzOCwibmJmIjoxNjMzNzc5MDM4LCJleHAiOjE2MzM3ODI2MzgsImp0aSI6Ijc5Rm0zRFhBbm9WbHJJRk00R1BzUXRMcER3SUYwUzlOIn0.6eBeJp-EbFuYKdXVDG9PptNtO7UA4btMH-C3ICswd88"
+}<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.java.qa.sccm.test.LoginTest@5dd91bca</td></tr>
+<tr>
+<td title='com.java.qa.sccm.test.DeleteCustomerTest.ValidateDeleteCustomer()'><b>ValidateDeleteCustomer</b><br>Test class: com.java.qa.sccm.test.DeleteCustomerTest<br>Parameters: {TestName=InvalidCustID, Customer_id=!@#!#$%$#}<br/>
+<a href="#Output-202149782" onClick='toggleBox("Output-202149782", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-202149782" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-202149782">
+Request URI : http://173.37.21.174/SCCM/sccm_api/web/api/v1/customers?customer_id=!@#!#$%$#<br/>
+Status code : 200<br/>
+Response message : Response Messege : {
+    "status_code": 5000,
+    "sub_status_code": 5003,
+    "error": "Customer Resource Not Found",
+    "data": [
+        
+    ],
+    "app_data": [
+        
+    ]
+}<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.java.qa.sccm.test.DeleteCustomerTest@58359ebd</td></tr>
+</table><p>
+</body>
+</html>
